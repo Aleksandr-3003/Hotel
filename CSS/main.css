@@ -1,11 +1,30 @@
 /*Rizzoma*/
- .check{
-    width: 20px;
-height: 20px;
-left: 587px;
-top: 174.56px;
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserrat/Montserrat-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
-background: #FFFFFF;
+@font-face{
+    font-family: 'Montserrat';
+    src: url('montserrat/Montserrat-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+.row{
+    margin-left: 0px;
+}
+
+ .check{
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 20px;
+    height: 20px;
+    left: 587px;
+    top: 174.56px;
+    float: left;
+     background: #FFFFFF;
 /* Dark 25% */
 
 border: 1px solid rgba(31, 32, 65, 0.25);
@@ -14,15 +33,13 @@ border-radius: 4px;
 }
 
 .radio{
-    
-width: 20px;
-height: 20px;
-background: #FFFFFF;
-/* Dark 25% */
-
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 10px;
+    float: left;
+    width: 20px;
+    height: 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 10px;
 }
 .tog input{
     display: none;
@@ -39,6 +56,7 @@ border-radius: 10px;
     border: 1px solid #BC9CFF;
     box-sizing: border-box;
     border-radius: 10px;
+    margin-bottom: 14px;
 
 }
 .circl{
@@ -63,6 +81,7 @@ transition: .4s;
     display: none;}
 
 .like_dis{
+    margin-right: 10px;
     width: 42px;
 height: 22px;
 left: 587px;
@@ -94,32 +113,59 @@ input:checked + .circl{
 .inp{
     background: #FFFFFF;
 /* Dark 25% */
-width: 320px;
-height: 44px;
-border: 1px solid rgba(31, 32, 65, 0.25);
-box-sizing: border-box;
-border-radius: 4px;
+    margin-bottom: 22px;
+    padding: 0px;
+    width: inherit;
+    height: 46px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
 }
-h3{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+.head-form{
+    width: 320px;
+ }
+.smol{
+    width: 150px;
+    float: left;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+.midi{
+    width: 266px;
+    margin-top: 18px;
+}
 
-text-align: right;
-text-transform: uppercase;
+h3{
+    text-align: right;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+
 }
 h4{
-    font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+    float: left;
+    font-family: Montserrat;  
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
 
-text-transform: uppercase;
+}
+
+.tit{
+    float:none;
+    margin-bottom: 16px;
+
+}
+.ch{
+    color: rgba(31, 32, 65, 0.5);
+    width: 211px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    font-size: 14px;  
+    text-align: left;  
 }
 
 .star{
@@ -166,4 +212,22 @@ color: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     top: 262px;
     font-size: 12px;
     color: #BC9CFF;
+}
+
+.rad {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.heart{
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+      margin-left: 8px;
 }
