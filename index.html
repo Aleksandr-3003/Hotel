@@ -2,20 +2,21 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    
-    
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-    
     
 	<link href="css/main.css" rel="stylesheet">
 	
-	<title>портфолио</title>
+  <title>портфолио</title>
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
 
-<body>
+
    <header>
+   </header>
+   <body>
           <div class="container" style="margin-top: 143px;">
             <div class="row">
                 <div class="col-xl-4">
@@ -96,50 +97,80 @@
               <div class="col-xl-4">
                  
                         <h4 class="tit">CHECKBOX BUTTONS</h4>
-                           <div class="row">
-                              <input class="check" type="checkbox">
-                               <h3 class="ch">Можно курить</h3>
+                          
+						  <div class="row">
+                               <input  type="checkbox" id="ch_icon-1">
+                                     <label class="ch-leb" for="ch_icon-1">   
+                                            <h3 class="ch">Можно курить</h3>
+                                     </label>
+                                   <img class="ch_ic" src="images/Vector.png"> 
                            </div>
+
+
                            <div class="row">
-                             <input class="check" type="checkbox">
-                               <h3 class="ch"> Можно с питомцами</h3>
+                                  <input type="checkbox" id="ch_icon-2">
+                                       <label class="ch-leb" for="ch_icon-2">  
+                                             <h3 class="ch"> Можно с питомцами</h3>
+                                         </label>
+                                   <img class="ch_ic" src="images/Vector.png"> 
                            </div>
+						   
                            <div class="row">
-                            <input class="check" type="checkbox">
-                                <h3 class="ch">Можно пригласить гостей  (до 10 человек)</h3>
+                                   <input type="checkbox" id="ch_icon-3">
+                                      <label class="ch-leb" for="ch_icon-3">
+                                           <h3 class="ch">Можно пригласить гостей  (до 10 человек)</h3>
+                                       </label>
+                                <img class="ch_ic" src="images/Vector.png"> 
                            </div>
-                       <h4 class="tit" style="margin-top:40px ;">RADIO BUTTONS</h4>
+
+              <h4 class="tit" style="margin-top:40px ;">RADIO BUTTONS</h4>
                             
-                              <div class="row" style="margin-bottom: 36px;">
-                               <input class="radio" type="radio" name="sex">
-                                <h3 class="ch rad">Мужчина</h3>
-                                   <input class="radio" type="radio" name="sex">
-                                   <h3 class="ch rad">Женщина</h3>
+                          <div class="row" style="margin-bottom: 36px;">
+                            <div class="row">  
+
+                              <input id="rad" type="radio" name="sex">
+                                  <label class="radio" for=""></label>
+                              <h3 class="ch rad">Мужчина</h3>     
+                              
                               </div>
+                              <div class="row">
+                                <input id="rad" type="radio" name="sex">
+                                     <label class="radio" for=""></label>
+                                     <h3 class="ch rad">Женщина</h3>
+                              </div>
+                          </div>
 
                         <h4 class="tit">TOGGLE</h4>
-                          <div class="row">
-                           <label class="tog">
-                            <input  type="checkbox">
-                              <div class="circl">
-                                  </div>
-                            </label>
-                               <h3 class="ch rad">  Получать спецпредложения</h3>
-                          </div>
-                         <div class="row">    
-                          <label class="tog">
-                            <input  type="checkbox">
-                              <div class="circl">
-                                 </div>  
-                           </label>
-                               <h3 class="ch rad">  Получать спецпредложения</h3>
-                         </div>   
+                           <table>
+                               <tr>
+                                 <td>
+                                     <input  type="checkbox"  id="tog-1">
+                                        <label class="tog" for="tog-1"> </label>
+                                        <div class="circl"></div>
+                                  </td>
+                                  <td valign="top" style="padding-top: 4px;">
+                                    <h3 class="ch rad">  Получать спецпредложения</h3>
+                                  </td>
+                               </tr>
+                               <tr>
+                                    <td> 
+                                     <input  type="checkbox" id="tog-2">
+                                          <label class="tog" for="tog-2"></label>
+                                             <div class="circl"></div>  
+                                    </td>
+                                    <td valign="top" style="padding-top: 4px;">
+                                      <h3 class="ch rad">  Получать спецпредложения</h3>
+                                    </td>
+                                </tr>
+                          </table>
+
                         <h4 class="tit" style="margin-top: 44px;">LIKE BUTTON</h4>
                                
                             <label class="like_dis">
                             <input  type="checkbox"> 
                                 <span style="font-size: 10px; color:rgba(31, 32, 65, 0.25)">
-                                <i class="far fa-heart heart"><text>2</text></i>
+                                <i class="far fa-heart heart" style="margin-top: 6px">
+                                  <text>2</text></i>
                                    
                                 </span>
                                
@@ -147,8 +178,9 @@
                            <label class="like">
                             <input  type="checkbox"> 
                                <span style="font-size: 10px; color: #BC9CFF">
-                                 <i class="fas fa-heart heart"><text>2</text></i>
-                                   
+                                 <i class="fas fa-heart heart" style="margin-top: 6px;">
+                                  <text>2</text></i>
+                                 
                                </span>      
                                 
                           </label>
@@ -172,7 +204,8 @@
               </div>
               <div class="col-xl-4">
                  <h4>RANGE SLIDER</h4><br>
-                 
+                 <input id="ex12c" type="text"/>
+                 <br/>
 
                  
 
@@ -191,7 +224,7 @@
                    <input type="button" class="but_2 btn" value="CLICK ME">
                    <br>
                    <input type="button" class="but btn" value="ПЕРЕЙТИ К ОПЛАТЕ" style=" background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); width: 320px;">
-                   <span style="color:white;position: absolute; top: 248px; left: 309px;">
+                   <span style="color:white;position: absolute; top: 250px; left: 309px;">
                       <i class="fas fa-arrow-right"></i>
                     </span>
                 
@@ -200,9 +233,19 @@
        </div>  
        </div>
 			 
-	</header>
+	
 
 		
 </body>
-       
+<script>
+// With JQuery
+$("#ex12a").slider({ id: "slider12a", min: 0, max: 10, value: 5 });
+$("#ex12b").slider({ id: "slider12b", min: 0, max: 10, range: true, value: [3, 7] });
+$("#ex12c").slider({ id: "slider12c", min: 0, max: 10, range: true, value: [3, 7] });
+
+// Without JQuery
+var sliderA = new Slider("#ex12a", { id: "slider12a", min: 0, max: 10, value: 5 });
+var sliderB = new Slider("#ex12b", { id: "slider12b", min: 0, max: 10, range: true, value: [3, 7] });
+var sliderC = new Slider("#ex12c", { id: "slider12c", min: 0, max: 10, range: true, value: [3, 7] });
+</script>       
 </html>
